@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Basic Page Info -->
+	<meta charset="utf-8">
+	<title>E-Library:OLMS</title>
+
+	<!-- Site favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="vendors/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="vendors/images/favicon-16x16.png">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
+	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+
+
+</head>
+<body>
+	<div class="pre-loader">
+		<div class="pre-loader-box">
+			<div class="loader-logo"><img src="vendors/images/logo-icon.png" alt=""><h1>HoldMyBook</h1></div>
+			<div class='loader-progress' id="progress_div">
+				<div class='bar' id='bar1'></div>
+			</div>
+			<div class='percent' id='percent1'>0%</div>
+			<div class="loading-text">
+				Loading...
+			</div>
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="header-left">
+			<div class="menu-icon dw dw-menu"></div>
+			<div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
+			
+		</div>
+		<div class="header-right">
+			
+			
+			<div class="user-info-dropdown">
+				<div class="dropdown">
+					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+						<span class="user-icon">
+							<img src="vendors/images/logo.webp" alt="" style="scale: 0.5 !important" >
+						</span>
+						<span class="user-name">Jaison John</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+						<a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i> Profile</a>
+						<a class="dropdown-item" href="profile.html"><i class="dw dw-settings2"></i>Report</a>
+						<a class="dropdown-item" href="login.html"><i class="dw dw-logout"></i> Log Out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="left-side-bar">
+		<div class="brand-logo">
+			<a href="javascript:;">
+				<img src="vendors/images/logo-icon.png" alt="" class="dark-logo">
+				<img src="vendors/images/logo-icon.png" alt="" class="light-logo">
+				<p>HoldMyBook</p>
+			</a>
+			<div class="close-sidebar" data-toggle="left-sidebar-close">
+				<i class="ion-close-round"></i>
+			</div>
+		</div>
+		<div class="menu-block customscroll">
+			<div class="sidebar-menu">
+				<ul id="accordion-menu">
+					<li class="dropdown active">
+						<a href="index.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
+						</a>
+					</li>
+                    
+					<li class="dropdown">
+						<a href="user.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-browser2"></span><span class="mtext">Users</span>
+						</a>
+					</li>
+
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-library"></span><span class="mtext">Books</span>
+						</a>
+                        <ul class="submenu">
+                            <li><a href="product.php">Add Book</a></li>
+                            <li><a href="viewbook.php">View Book</a></li>
+                        </ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="order.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-analytics-21"></span><span class="mtext">Orders</span>
+						</a>
+					</li>
+
+
+					<li class="dropdown">
+						<a href="category.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-list3"></span><span class="mtext">Categories</span>
+						</a>
+					
+					</li>
+					<li>
+						<a href="chat.html" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-chat3"></span><span class="mtext">Reviews</span>
+						</a>
+					</li>
+					<li>
+						<a href="invoice.html" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-invoice"></span><span class="mtext">Invoice</span>
+						</a>
+					</li>
+					<li>
+						<div class="dropdown-divider"></div>
+					</li>
+					<li>
+						<div class="sidebar-small-cap">More</div>
+					</li>
+					<li>
+						<a href="" class="dropdown-toggle  no-arrow">
+							<span class="micon dw dw-edit-2"></span><span class="mtext">Source Code</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="blank" target="_blank" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-paper-plane1"></span>
+							<span class="mtext">Landing Page <img src="vendors/images/coming-soon.png" alt="" width="25"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-menu-overlay"></div>

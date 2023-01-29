@@ -1,0 +1,425 @@
+{% include 'header.html' %}
+<style>
+  ul > li:nth-child(2) a.border-primary {
+    border-bottom: 5px solid #f77d0a;
+    border-color: #f77d0a !important;
+    color: #f77d0a;
+  }
+</style>
+
+<main id="content">
+  <div class="mb-5 space-bottom-lg-3">
+    <div class="page-header mb-8">
+      <div
+        class="bg-img-hero bg-gradient-primary"
+        style="background-image: url(../../assets/img/1920x840/img1.jpg)"
+      >
+        <div class="container position-relative mb-2">
+          <div class="d-flex justify-content-center space-2 space-lg-4">
+            <h6 class="font-weight-medium text-white font-size-12 py-lg-5">
+              About us
+            </h6>
+          </div>
+          <nav
+            class="woocommerce-breadcrumb font-size-2 d-flex justify-content-center align-items-center pb-4"
+            style="margin-top: -150px"
+          >
+            <a class="text-white" href="../home/index.html">Home</a>
+            <span class="breadcrumb-separator text-white mx-1"
+              ><i class="fas fa-angle-right"></i
+            ></span>
+            <span class="text-white">About us</span>
+          </nav>
+        </div>
+      </div>
+    </div>
+    {% comment %}
+    <img
+      class="img-fluid"
+      src="/static/img/1920x650/img1.jpg"
+      alt="Image-Description"
+    />
+    {% endcomment %}
+    <div class="container">
+      <div class="mb-lg-8">
+        <div class="col-lg-9 mx-auto">
+          <div
+            class="bg-white mt-n10 mt-md-n13 pt-5 pt-lg-7 px-3 px-md-5 pl-xl-10 pr-xl-4"
+          >
+            <div class="mb-4 mb-lg-7 ml-xl-4">
+              <h6 class="font-weight medium font-size-10 mb-4 mb-lg-7">
+                Welcome to E-Library:OLMS
+              </h6>
+              <!-- <p class="font-weight-medium font-italic">“ Many desktop publishing packages and web
+                                    page editors now use Lorem Ipsum as their default model search for eolved over
+                                    sometimes by accident, sometimes on purpose ”</p> -->
+            </div>
+            <div class="mb-4 pb-xl-1 ml-xl-4">
+              <h6 class="font-weight-medium font-size-4 mb-4">
+                What we really do?
+              </h6>
+              <p class="font-size-2">
+                E-Library:OLMS is a web application which provides the platform
+                to a librarian to control all the daily activities related to
+                the books of a library of an organisation. Are these activities
+                limited to the transactions of physical books? No, users can buy
+                and sell e-copies of books on this system. Borrowing and lending
+                of books is also possible with the use of this web application.
+              </p>
+            </div>
+            <div class="ml-xl-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <h6 class="font-weight-medium font-size-4">Our Vision</h6>
+                  <p class="font-size-2">
+                    One of our goals is to make the management process easy for
+                    the librarian and to assist them to carry out the all the
+                    activities efficiently which can save their time.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <h6 class="font-weight-medium font-size-4">Our Vision</h6>
+                  <p class="font-size-2">
+                    We would also like to help the users of an organisation to
+                    be able to carry out exchanges of books and maybe clear out
+                    their stock of last year books. Also, the e-books era is
+                    here, isn't it?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5 mb-lg-7">
+        <div
+          class="d-md-flex align-items-center justify-content-between px-xl-10"
+        >
+          <div class="text-center mb-3 mb-md-0">
+            <div class="font-size-12 font-weight-medium ml-lg-2">45M</div>
+            <span class="font-size-4">Active Readers</span>
+          </div>
+          <div class="text-center mb-3 mb-md-0">
+            <div class="font-size-12 font-weight-medium ml-2">+6k</div>
+            <span class="font-size-4">Total Buyers</span>
+          </div>
+          <div class="text-center mb-3 mb-md-0">
+            <div class="font-size-12 font-weight-medium">30.6M</div>
+            <span class="font-size-4">Total Sellers</span>
+          </div>
+          <div class="text-center mb-0">
+            <div class="font-size-12 font-weight-medium ml-2">283</div>
+            <span class="font-size-4">Transaction Activity</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="mb-5 mb-lg-10">
+                    <h6 class="font-weight-medium font-size-7 mb-5 mb-lg-6">Why We</h6>
+                    <ul class="list-unstyled my-0 list-features row d-md-flex">
+                        <li class="list-feature mb-5 mb-lg-0 col-md-6 col-lg-3">
+                            <div class="media flex-column align-items-center align-items-md-start pr-xl-3">
+                                <div class="feature__icon font-size-14 text-primary text-lh-xs mb-3">
+                                    <i class="glyph-icon flaticon-delivery"></i>
+                                </div>
+                                <div class="media-body text-center text-md-left">
+                                    <h4 class="feature__title font-size-3 text-dark">Free Delivery</h4>
+                                    <p class="feature__subtitle m-0 text-dark">Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-feature  mb-5 mb-lg-0 col-md-6 col-lg-3">
+                            <div class="media flex-column align-items-center align-items-md-start pr-xl-3">
+                                <div class="feature__icon font-size-14 text-primary text-lh-xs mb-3">
+                                    <i class="glyph-icon flaticon-credit"></i>
+                                </div>
+                                <div class="media-body text-center text-md-left">
+                                    <h4 class="feature__title font-size-3 text-dark">Secure Payment</h4>
+                                    <p class="feature__subtitle m-0 text-dark">Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-feature  mb-5 mb-md-0 col-md-6 col-lg-3">
+                            <div class="media flex-column align-items-center align-items-md-start pr-xl-3">
+                                <div class="feature__icon font-size-14 text-primary text-lh-xs mb-3">
+                                    <i class="glyph-icon flaticon-warranty"></i>
+                                </div>
+                                <div class="media-body text-center text-md-left">
+                                    <h4 class="feature__title font-size-3 text-dark">Money Back Guarantee</h4>
+                                    <p class="feature__subtitle m-0 text-dark">Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-feature  mb-5 mb-md-0 col-md-6 col-lg-3">
+                            <div class="media flex-column align-items-center align-items-md-start pr-xl-3">
+                                <div class="feature__icon font-size-14 text-primary text-lh-xs mb-3">
+                                    <i class="glyph-icon flaticon-help"></i>
+                                </div>
+                                <div class="media-body text-center text-md-left">
+                                    <h4 class="feature__title font-size-3 text-dark">24/7 Support</h4>
+                                    <p class="feature__subtitle m-0 text-dark">Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div> -->
+      <div class="mb-10 pb-md-6 pb-lg-10">
+        <h6 class="font-weight-medium font-size-7 mb-5">Our Team</h6>
+        <div
+          class="js-slick-carousel u-slick slick-initialized slick-slider slick-dotted"
+          data-pagi-classes="text-center u-slick__pagination mt-md-8 mt-4 position-absolute right-0 left-0"
+          data-slides-show="5"
+          data-responsive='[{
+                               "breakpoint": 992,
+                               "settings": {
+                                 "slidesToShow": 2
+                               }
+                            }, {
+                               "breakpoint": 768,
+                               "settings": {
+                                 "slidesToShow": 1
+                               }
+                            }, {
+                               "breakpoint": 554,
+                               "settings": {
+                                 "slidesToShow": 1
+                               }
+                            }]'
+        >
+          <div class="slick-list draggable">
+            <div
+              class="slick-track"
+              style="
+                opacity: 1;
+                width: 2760px;
+                transform: translate3d(0px, 0px, 0px);
+              "
+            >
+              <div
+                class="product__inner overflow-hidden slick-slide slick-current slick-active"
+                style="width: 345px"
+                tabindex="0"
+                role="tabpanel"
+                id="slick-slide00"
+                aria-describedby="slick-slide-control00"
+                data-slick-index="0"
+                aria-hidden="false"
+              >
+                <div
+                  class="woocommerce-LoopProduct-link woocommerce-loop-product__link d-block position-relative"
+                >
+                  <div
+                    class="woocommerce-loop-product__thumbnail border pt-5 mb-3"
+                  >
+                    <a href="#" class="d-block" tabindex="0"
+                      ><img
+                        src="/static/img/329x330/img2.png"
+                        class="img-fluid mx-auto d-block attachment-shop_catalog size-shop_catalog wp-post-image"
+                        alt="image-description"
+                    /></a>
+                  </div>
+                  <div class="woocommerce-loop-product__body product__body">
+                    <h6 class="font-weight-regular mb-1">Nikhil Motwani</h6>
+                    <span class="font-size-2 text-secondary-gray-700"
+                      >Web Developer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product__inner overflow-hidden slick-slide slick-active"
+                style="width: 345px"
+                tabindex="0"
+                role="tabpanel"
+                id="slick-slide01"
+                aria-describedby="slick-slide-control01"
+                data-slick-index="1"
+                aria-hidden="false"
+              >
+                <div
+                  class="woocommerce-LoopProduct-link woocommerce-loop-product__link d-block position-relative"
+                >
+                  <div
+                    class="woocommerce-loop-product__thumbnail border border-left-0 pt-5 mb-3"
+                  >
+                    <a href="#" class="d-block" tabindex="0"
+                      ><img
+                        src="/static/img/329x330/img3.png"
+                        class="img-fluid mx-auto d-block attachment-shop_catalog size-shop_catalog wp-post-image"
+                        alt="image-description"
+                    /></a>
+                  </div>
+                  <div class="woocommerce-loop-product__body product__body">
+                    <h6 class="font-weight-regular mb-1">Hardik Vekariya</h6>
+                    <span class="font-size-2 text-secondary-gray-700"
+                      >Web Developer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product__inner overflow-hidden slick-slide"
+                style="width: 345px"
+                tabindex="-1"
+                role="tabpanel"
+                id="slick-slide02"
+                aria-describedby="slick-slide-control02"
+                data-slick-index="2"
+                aria-hidden="true"
+              >
+                <div
+                  class="woocommerce-LoopProduct-link woocommerce-loop-product__link d-block position-relative"
+                >
+                  <div
+                    class="woocommerce-loop-product__thumbnail border border-left-0 pt-5 mb-3"
+                  >
+                    <a href="#" class="d-block" tabindex="-1"
+                      ><img
+                        src="/static/img/329x330/img4.png"
+                        class="img-fluid mx-auto d-block attachment-shop_catalog size-shop_catalog wp-post-image"
+                        alt="image-description"
+                    /></a>
+                  </div>
+                  <div class="woocommerce-loop-product__body product__body">
+                    <h6 class="font-weight-regular mb-1">Jaison John</h6>
+                    <span class="font-size-2 text-secondary-gray-700"
+                      >Web Developer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="product__inner overflow-hidden slick-slide" style="width: 345px;"
+                                    tabindex="-1" role="tabpanel" id="slick-slide03"
+                                    aria-describedby="slick-slide-control03" data-slick-index="3" aria-hidden="true">
+                                    <div
+                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link d-block position-relative">
+                                        <div class="woocommerce-loop-product__thumbnail border border-left-0 pt-5 mb-3">
+                                            <a href="#" class="d-block" tabindex="-1"><img
+                                                    src="/static/img/329x330/img5.png"
+                                                    class="img-fluid mx-auto d-block attachment-shop_catalog size-shop_catalog wp-post-image"
+                                                    alt="image-description"></a>
+                                        </div>
+                                        <div class="woocommerce-loop-product__body product__body">
+                                            <h6 class="font-weight-regular mb-1">Pamela Doe</h6>
+                                            <span class="font-size-2 text-secondary-gray-700">Delivery Driver</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__inner overflow-hidden slick-slide" style="width: 345px;"
+                                    tabindex="-1" role="tabpanel" id="slick-slide04"
+                                    aria-describedby="slick-slide-control04" data-slick-index="4" aria-hidden="true">
+                                    <div
+                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link d-block position-relative">
+                                        <div class="woocommerce-loop-product__thumbnail border border-left-0 pt-5 mb-3">
+                                            <a href="#" class="d-block" tabindex="-1"><img
+                                                    src="/static/img/329x330/img2.png"
+                                                    class="img-fluid mx-auto d-block attachment-shop_catalog size-shop_catalog wp-post-image"
+                                                    alt="image-description"></a>
+                                        </div>
+                                        <div class="woocommerce-loop-product__body product__body">
+                                            <h6 class="font-weight-regular mb-1">Susan McCain</h6>
+                                            <span class="font-size-2 text-secondary-gray-700">Packaging Girl</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__inner overflow-hidden slick-slide" style="width: 345px;"
+                                    tabindex="-1" role="tabpanel" id="slick-slide05"
+                                    aria-describedby="slick-slide-control05" data-slick-index="5" aria-hidden="true">
+                                    <div
+                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link d-block position-relative">
+                                        <div class="woocommerce-loop-product__thumbnail border border-left-0 pt-5 mb-3">
+                                            <a href="#" class="d-block" tabindex="-1"><img
+                                                    src="/static/img/329x330/img3.png"
+                                                    class="img-fluid mx-auto d-block attachment-shop_catalog size-shop_catalog wp-post-image"
+                                                    alt="image-description"></a>
+                                        </div>
+                                        <div class="woocommerce-loop-product__body product__body">
+                                            <h6 class="font-weight-regular mb-1">Andre Kowalsy</h6>
+                                            <span class="font-size-2 text-secondary-gray-700">Support Boss</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__inner overflow-hidden slick-slide" style="width: 345px;"
+                                    tabindex="-1" role="tabpanel" id="slick-slide06"
+                                    aria-describedby="slick-slide-control06" data-slick-index="6" aria-hidden="true">
+                                    <div
+                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link d-block position-relative">
+                                        <div class="woocommerce-loop-product__thumbnail border border-left-0 pt-5 mb-3">
+                                            <a href="#" class="d-block" tabindex="-1"><img
+                                                    src="/static/img/329x330/img4.png"
+                                                    class="img-fluid mx-auto d-block attachment-shop_catalog size-shop_catalog wp-post-image"
+                                                    alt="image-description"></a>
+                                        </div>
+                                        <div class="woocommerce-loop-product__body product__body">
+                                            <h6 class="font-weight-regular mb-1">Pamela Doe</h6>
+                                            <span class="font-size-2 text-secondary-gray-700">Delivery Driver</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__inner overflow-hidden slick-slide" style="width: 345px;"
+                                    tabindex="-1" role="tabpanel" id="slick-slide07"
+                                    aria-describedby="slick-slide-control07" data-slick-index="7" aria-hidden="true">
+                                    <div
+                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link d-block position-relative">
+                                        <div class="woocommerce-loop-product__thumbnail border border-left-0 pt-5 mb-3">
+                                            <a href="#" class="d-block" tabindex="-1"><img
+                                                    src="/static/img/329x330/img2.png"
+                                                    class="img-fluid mx-auto d-block attachment-shop_catalog size-shop_catalog wp-post-image"
+                                                    alt="image-description"></a>
+                                        </div>
+                                        <div class="woocommerce-loop-product__body product__body">
+                                            <h6 class="font-weight-regular mb-1">Thomas Snow</h6>
+                                            <span class="font-size-2 text-secondary-gray-700">CEO/Founder</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+            </div>
+          </div>
+          <ul
+            class="js-pagination text-center u-slick__pagination mt-md-8 mt-4 position-absolute right-0 left-0"
+            style=""
+            role="tablist"
+          >
+            <li class="slick-active slick-current" role="presentation">
+              <span></span>
+            </li>
+            <li role="presentation"><span></span></li>
+            <li role="presentation"><span></span></li>
+            <li role="presentation"><span></span></li>
+            <li role="presentation"><span></span></li>
+            <li role="presentation"><span></span></li>
+            <li role="presentation"><span></span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div>
+                    <h6 class="font-weight-medium font-size-7 mb-4 mb-lg-9">Company Partners</h6>
+                    <div class="d-lg-flex align-items-center justify-content-between">
+                        <div class="text-center mb-5 mb-lg-0">
+                            <img class="img-fluid" src="/static/img/150x32/img1.png" alt="Image-Description">
+                        </div>
+                        <div class="text-center mb-5 mb-lg-0">
+                            <img class="img-fluid" src="/static/img/150x32/img2.png" alt="Image-Description">
+                        </div>
+                        <div class="text-center mb-5 mb-lg-0">
+                            <img class="img-fluid" src="/static/img/150x32/img3.png" alt="Image-Description">
+                        </div>
+                        <div class="text-center mb-5 mb-lg-0">
+                            <img class="img-fluid" src="/static/img/150x32/img4.png" alt="Image-Description">
+                        </div>
+                        <div class="text-center mb-5 mb-lg-0">
+                            <img class="img-fluid" src="/static/img/150x32/img6.png" alt="Image-Description">
+                        </div>
+                        <div class="text-center mb-5 mb-lg-0">
+                            <img class="img-fluid" src="/static/img/150x32/img5.png" alt="Image-Description">
+                        </div>
+                    </div>
+                </div> -->
+    </div>
+  </div>
+</main>
+
+{% include 'footer.html' %}

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>OLMS | E-Library:OLMS</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="/static/img/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/vendor/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/static/vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="/static/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/static/vendor/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="/static/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+
+    <link rel="stylesheet" href="/static/css/theme.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0346dae2bf.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <header id="site-header" class="site-header__v1 u-header">
+        <div class="topbar border-bottom d-none d-md-block">
+            <div class="container-fluid px-2 px-md-5 px-xl-8d75">
+                <div class="topbar__nav d-md-flex justify-content-end align-items-center">
+                    <ul class="topbar__nav--right nav mr-md-n3">
+                        <li class="nav-item"><a href="/wishlist" class="nav-link link-black-100"><i
+                                    class="glph-icon flaticon-heart" style="color: #2B2E4A;"></i></a></li>
+                        <li class="nav-item">
+                            <!-- Account Sidebar Toggle Button -->
+                            <a id="" href="/login"
+                                class="nav-link link-black-100 target-of-invoker-has-unfolds">
+                                <i class="glph-icon flaticon-user" style="color: #2B2E4A;"></i>
+                            </a>
+                            <!-- End Account Sidebar Toggle Button -->
+                        </li>
+                        <li class="nav-item">
+                            <!-- Cart Sidebar Toggle Button -->
+                            <a id="sidebarNavToggler1" href="javascript:;" role="button"
+                                class="nav-link link-black-100 position-relative target-of-invoker-has-unfolds"
+                                aria-controls="sidebarContent1" aria-haspopup="true" aria-expanded="false"
+                                data-unfold-event="click" data-unfold-hide-on-scroll="false"
+                                data-unfold-target="#sidebarContent1" data-unfold-type="css-animation"
+                                data-unfold-overlay="{
+                                    &quot;className&quot;: &quot;u-sidebar-bg-overlay&quot;,
+                                    &quot;background&quot;: &quot;rgba(0, 0, 0, .7)&quot;,
+                                    &quot;animationSpeed&quot;: 500
+                                }" data-unfold-animation-in="fadeInRight" data-unfold-animation-out="fadeOutRight"
+                                data-unfold-duration="500">
+                                <span
+                                    class="position-absolute bg-dark width-16 height-16 rounded-circle d-flex align-items-center justify-content-center text-white font-size-n9 right-0">3</span>
+                                <i class="glph-icon flaticon-icon-126515" style="color: #2B2E4A;" ></i>
+                            </a>
+                            <!-- End Cart Sidebar Toggle Button -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="masthead border-bottom position-relative" style="margin-bottom: -1px;background: #2B2E4A;">
+            <div class="container-fluid px-3 px-md-5 px-xl-8d75 py-2 py-md-0">
+                <div class="d-flex align-items-center position-relative flex-wrap">
+                    <div class="offcanvas-toggler mr-4 mr-lg-8">
+                        <a id="sidebarNavToggler2" href="javascript:;" role="button" class="cat-menu"
+                            aria-controls="sidebarContent2" aria-haspopup="true" aria-expanded="false"
+                            data-unfold-event="click" data-unfold-hide-on-scroll="false"
+                            data-unfold-target="#sidebarContent2" data-unfold-type="css-animation" data-unfold-overlay='{
+                            "className": "u-sidebar-bg-overlay",
+                            "background": "rgba(0, 0, 0, .7)",
+                            "animationSpeed": 100
+                        }' data-unfold-animation-in="fadeInLeft" data-unfold-animation-out="fadeOutLeft"
+                            data-unfold-duration="100">
+                            <i class="fa-solid fa-bars" style="color:white;"></i>
+                        </a>
+                    </div>
+                    <div class="site-branding pr-md-4">
+                        <img src="/static/img/logo.png" style="
+                        width: 200px;
+                        height: 200px;
+                        margin-top: -60px;
+                        margin-bottom: -70px;
+                        margin-left:-50px;
+                        
+                    " alt="">
+                    </div>
+                    <div class="site-navigation mr-auto d-none d-xl-block">
+                        <ul class="nav">
+                            <li class="nav-item dropdown">
+                                <a id="homeDropdownInvoker" href="/"
+                                    class="nav-link link-black-100 mx-4 px-0 py-5 font-weight-medium d-flex align-items-center active border-bottom border-primary border-width-2">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="homeDropdownInvoker" href="/about-us"
+                                    class="nav-link link-black-100 mx-4 px-0 py-5 font-weight-medium d-flex align-items-center active border-bottom border-primary border-width-2">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="nav-item"><a href="/product"
+                                    class="nav-link link-black-100 mx-4 px-0 py-5 font-weight-medium d-flex align-items-center active border-bottom border-primary border-width-2">Book</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="shopDropdownInvoker" href="/category"
+                                    class="dropdown-toggle nav-link link-black-100 mx-4 px-0 py-5 font-weight-medium d-flex align-items-center"
+                                    aria-haspopup="true" aria-expanded="false" data-unfold-event="hover"
+                                    data-unfold-target="#shopDropdownMenu" data-unfold-type="css-animation"
+                                    data-unfold-duration="200" data-unfold-delay="50" data-unfold-hide-on-scroll="true"
+                                    data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                                    Categories
+                                </a>
+                                <ul id="shopDropdownMenu"
+                                    class="dropdown-unfold dropdown-menu font-size-2 rounded-0 border-gray-900"
+                                    aria-labelledby="shopDropdownInvoker" style="background: #2B2E4A;">
+                                    <li class="position-relative">
+                                        <a id="shopDropdownsubmenuoneInvoker" href="#"
+                                            class="dropdown-item dropdown-item__sub-menu link-black-100 d-flex align-items-center justify-content-between">
+                                            Romance
+                                        </a>
+                                    </li>
+                                    <li class="position-relative">
+                                        <a id="shopDropdownsubmenuoneInvoker" href="#"
+                                            class="dropdown-item dropdown-item__sub-menu link-black-100 d-flex align-items-center justify-content-between">
+                                            History
+                                        </a>
+                                    </li>
+                                    <li class="position-relative">
+                                        <a id="shopDropdownsubmenuoneInvoker" href="#"
+                                            class="dropdown-item dropdown-item__sub-menu link-black-100 d-flex align-items-center justify-content-between">
+                                            Academics
+                                        </a>
+                                    </li>
+                                    <li class="position-relative">
+                                        <a id="shopDropdownsubmenuoneInvoker" href="#"
+                                            class="dropdown-item dropdown-item__sub-menu link-black-100 d-flex align-items-center justify-content-between">
+                                            Poetry
+                                        </a>
+                                    </li>
+                                    <li class="position-relative">
+                                        <a id="shopDropdownsubmenuoneInvoker" href="#"
+                                            class="dropdown-item dropdown-item__sub-menu link-black-100 d-flex align-items-center justify-content-between">
+                                            Horror
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="homeDropdownInvoker" href="/contact"
+                                    class="nav-link link-black-100 mx-4 px-0 py-5 font-weight-medium d-flex align-items-center active border-bottom border-primary border-width-2">
+                                    Contact
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <ul class="d-md-none nav mr-md-n3 ml-auto">
+                        <li class="nav-item">
+
+                            <a id="sidebarNavToggler9" href="javascript:;" role="button"
+                                class="px-2 nav-link link-black-100" aria-controls="sidebarContent9"
+                                aria-haspopup="true" aria-expanded="false" data-unfold-event="click"
+                                data-unfold-hide-on-scroll="false" data-unfold-target="#sidebarContent9"
+                                data-unfold-type="css-animation" data-unfold-overlay='{
+                                    "className": "u-sidebar-bg-overlay",
+                                    "background": "rgba(0, 0, 0, .7)",
+                                    "animationSpeed": 500
+                                }' data-unfold-animation-in="fadeInRight" data-unfold-animation-out="fadeOutRight"
+                                data-unfold-duration="500">
+                                <i class="glph-icon flaticon-user"></i>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <div class="site-search ml-xl-0 ml-md-auto w-r-100 my-2 my-xl-0">
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  
+                                    <i
+                                        class="fa-solid fa-magnifying-glass input-group-text py-2d75 bg-white-100 border-white-100" style="border-radius:10px 0px 0px 10px;"></i>
+                                </div>
+                                <input class="form-control bg-white-100 min-width-380 py-2d75 height-4 border-white-100"
+                                    type="search" placeholder="Search for Books by Keyword ..." aria-label="Search" style="border-radius:0px 10px 10px 0px">
+                            </div>
+                            <button class="btn btn-outline-success my-2 my-sm-0 sr-only" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside id="sidebarContent9" class="u-sidebar u-sidebar__lg" aria-labelledby="sidebarNavToggler9">
+        <div class="u-sidebar__scroller">
+            <div class="u-sidebar__container">
+                <div class="u-header-sidebar__footer-offset">
+
+                    <div class="d-flex align-items-center position-absolute top-0 right-0 z-index-2 mt-5 mr-md-6 mr-4">
+                        <button type="button" class="close ml-auto" aria-controls="sidebarContent9" aria-haspopup="true"
+                            aria-expanded="false" data-unfold-event="click" data-unfold-hide-on-scroll="false"
+                            data-unfold-target="#sidebarContent9" data-unfold-type="css-animation"
+                            data-unfold-animation-in="fadeInRight" data-unfold-animation-out="fadeOutRight"
+                            data-unfold-duration="500">
+                            <span aria-hidden="true">Close <i class="fas fa-times ml-2"></i></span>
+                        </button>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <aside id="sidebarContent" class="u-sidebar u-sidebar__lg" aria-labelledby="sidebarNavToggler">
+        <div class="u-sidebar__scroller">
+            <div class="u-sidebar__container">
+                <div class="u-header-sidebar__footer-offset">
+
+                    <div class="d-flex align-items-center position-absolute top-0 right-0 z-index-2 mt-5 mr-md-6 mr-4">
+                        <button type="button" class="close ml-auto" aria-controls="sidebarContent" aria-haspopup="true"
+                            aria-expanded="false" data-unfold-event="click" data-unfold-hide-on-scroll="false"
+                            data-unfold-target="#sidebarContent" data-unfold-type="css-animation"
+                            data-unfold-animation-in="fadeInRight" data-unfold-animation-out="fadeOutRight"
+                            data-unfold-duration="500">
+                            <span aria-hidden="true">Close <i class="fas fa-times ml-2"></i></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <aside id="sidebarContent1" class="u-sidebar u-sidebar__xl" aria-labelledby="sidebarNavToggler1">
+        <div class="u-sidebar__scroller js-scrollbar">
+            <div class="u-sidebar__container">
+                <div class="u-header-sidebar__footer-offset">
+
+                    <div class="d-flex align-items-center position-absolute top-0 right-0 z-index-2 mt-5 mr-md-6 mr-4">
+                        <button type="button" class="close ml-auto" aria-controls="sidebarContent1" aria-haspopup="true"
+                            aria-expanded="false" data-unfold-event="click" data-unfold-hide-on-scroll="false"
+                            data-unfold-target="#sidebarContent1" data-unfold-type="css-animation"
+                            data-unfold-animation-in="fadeInRight" data-unfold-animation-out="fadeOutRight"
+                            data-unfold-duration="500">
+                            <span aria-hidden="true">Close <i class="fas fa-times ml-2"></i></span>
+                        </button>
+                    </div>
+
+
+                    <div class="u-sidebar__body">
+                        <div class="u-sidebar__content u-header-sidebar__content">
+
+                            <header class="border-bottom px-4 px-md-6 py-4" style="padding-bottom:0.5rem !important">
+                                <h2 class="font-size-3 mb-0 d-flex align-items-center"><i
+                                        class="flaticon-icon-126515 mr-3 font-size-5"></i>Your shopping bag (3)</h2>
+                            </header>
+
+                            <div class="px-4 py-5 px-md-6 border-bottom">
+                                <div class="media">
+                                    <a href="#" class="d-block"><img src="/static/img/horror/img1.png" style="height:150px"
+                                            class="img-fluid" alt="image-description"></a>
+                                    <div class="media-body ml-4d875">
+                                        <div class="text-primary text-uppercase font-size-1 mb-1 text-truncate"><a
+                                                href="#">Hard Cover</a></div>
+                                        <h2
+                                            class="woocommerce-loop-product__title h6 text-lh-md mb-1 text-height-2 crop-text-2">
+                                            <a href="#" class="text-dark">The Ride of a Lifetime: Lessons Learned from
+                                                15 Years as CEO</a>
+                                        </h2>
+                                        <div class="font-size-2 mb-1 text-truncate"><a href="#"
+                                                class="text-gray-700">Robert Iger</a></div>
+                                        <div class="price d-flex align-items-center font-weight-medium font-size-3">
+                                            <span class="woocommerce-Price-amount amount">1 x <span
+                                                    class="woocommerce-Price-currencySymbol">Rs </span>125.30</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 ml-3">
+                                        <a href="#" class="text-dark"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-4 py-5 px-md-6 border-bottom">
+                                <div class="media">
+                                    <a href="#" class="d-block"><img src="/static/img/poetry/img1.png" style="height:150px"
+                                            class="img-fluid" alt="image-description"></a>
+                                    <div class="media-body ml-4d875">
+                                        <div class="text-primary text-uppercase font-size-1 mb-1 text-truncate"><a
+                                                href="#">Hard Cover</a></div>
+                                        <h2
+                                            class="woocommerce-loop-product__title h6 text-lh-md mb-1 text-height-2 crop-text-2">
+                                            <a href="#" class="text-dark">The Rural Diaries: Love, Livestock, and Big
+                                                Life Lessons Down</a>
+                                        </h2>
+                                        <div class="font-size-2 mb-1 text-truncate"><a href="#"
+                                                class="text-gray-700">Hillary Burton</a></div>
+                                        <div class="price d-flex align-items-center font-weight-medium font-size-3">
+                                            <span class="woocommerce-Price-amount amount">2 x <span
+                                                    class="woocommerce-Price-currencySymbol">Rs </span>200</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 ml-3">
+                                        <a href="#" class="text-dark"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-4 py-5 px-md-6 border-bottom">
+                                <div class="media">
+                                    <a href="#" class="d-block"><img src="/static/img/romance/img1.png" style="height:150px"
+                                            class="img-fluid" alt="image-description"></a>
+                                    <div class="media-body ml-4d875">
+                                        <div class="text-primary text-uppercase font-size-1 mb-1 text-truncate"><a
+                                                href="#">Paperback</a></div>
+                                        <h2
+                                            class="woocommerce-loop-product__title h6 text-lh-md mb-1 text-height-2 crop-text-2">
+                                            <a href="#" class="text-dark">Russians Among Us: Sleeper Cells, Ghost
+                                                Stories, and the Hunt.</a>
+                                        </h2>
+                                        <div class="font-size-2 mb-1 text-truncate"><a href="#"
+                                                class="text-gray-700">Gordon Corera</a></div>
+                                        <div class="price d-flex align-items-center font-weight-medium font-size-3">
+                                            <span class="woocommerce-Price-amount amount">6 x <span
+                                                    class="woocommerce-Price-currencySymbol">Rs </span>100</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 ml-3">
+                                        <a href="#" class="text-dark"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="px-4 py-5 px-md-6 d-flex justify-content-between align-items-center font-size-3">
+                                <h4 class="mb-0 font-size-3">Subtotal:</h4>
+                                <div class="font-weight-medium">Rs 750.00</div>
+                            </div>
+                            <div class="px-4 mb-8 px-md-6">
+                                <a href="/cart"
+                                    class="btn btn-block py-4 rounded-0 btn-outline-dark mb-4" style="padding-bottom:0.5rem !important;padding-top:0.5rem !important;">View Cart</a>
+                                <a href="/checkout"
+                                    class="btn btn-block py-4 rounded-0 btn-dark" style="padding-top:0.5rem !important;padding-bottom:0.5rem !important">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <aside id="sidebarContent2" class="u-sidebar u-sidebar__md u-sidebar--left" aria-labelledby="sidebarNavToggler2">
+        <div class="u-sidebar__scroller js-scrollbar">
+            <div class="u-sidebar__container">
+                <div class="u-header-sidebar__footer-offset">
+
+                    <div class="u-sidebar__body">
+                        <div class="u-sidebar__content u-header-sidebar__content">
+
+                            <header
+                                class="border-bottom px-4 px-md-5 py-4 d-flex align-items-center justify-content-between" style="padding-bottom: 0.5rem !important">
+                                <h2 class="font-size-3 mb-0">SHOP BY CATEGORY</h2>
+
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="close ml-auto" aria-controls="sidebarContent2"
+                                        aria-haspopup="true" aria-expanded="false" data-unfold-event="click"
+                                        data-unfold-hide-on-scroll="false" data-unfold-target="#sidebarContent2"
+                                        data-unfold-type="css-animation" data-unfold-animation-in="fadeInLeft"
+                                        data-unfold-animation-out="fadeOutLeft" data-unfold-duration="500">
+                                        <span aria-hidden="true"><i class="fas fa-times ml-2"></i></span>
+                                    </button>
+                                </div>
+
+                            </header>
+
+                            <div class="border-bottom">
+                                <div class="zeynep pt-4">
+                                    <ul>
+                                        <li class="has-submenu">
+                                            <a href="#">Home</a>
+                                           
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="#" >About us</a>
+                                           
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="#" >Product</a>
+                                           
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="#" data-submenu="biography">Categories</a>
+                                            <div id="biography" class="submenu">
+                                                <div class="submenu-header" data-submenu-close="biography">
+                                                    <a href="#">Categories</a>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Romance</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">History</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Academics</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Horror</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Science Fiction</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="has-submenu">
+                                            <a href="#" data-submenu="computers">Computers & Technology</a>
+                                            
+                                        </li>
+                                        
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="px-4 px-md-5 pt-5 pb-4 border-bottom">
+                                <h2 class="font-size-3 mb-3">HELP & SETTINGS </h2>
+                                <ul class="list-group list-group-flush list-group-borderless">
+                                    <li class="list-group-item px-0 py-2 border-0"><a href="#" class="h-primary">Your
+                                            Account</a></li>
+                                    <li class="list-group-item px-0 py-2 border-0"><a href="#"
+                                            class="h-primary">Help</a></li>
+                                    <li class="list-group-item px-0 py-2 border-0"><a href="#" class="h-primary">Sign
+                                            In</a></li>
+                                </ul>
+                            </div>
+                            <div class="px-4 px-md-5 py-5">
+                                
+
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a class="h-primary pr-2 font-size-2" href="#">
+                                            <span class="fab fa-facebook-f btn-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="h-primary pr-2 font-size-2" href="#">
+                                            <span class="fab fa-google btn-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="h-primary pr-2 font-size-2" href="#">
+                                            <span class="fab fa-twitter btn-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="h-primary pr-2 font-size-2" href="#">
+                                            <span class="fab fa-github btn-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </aside>

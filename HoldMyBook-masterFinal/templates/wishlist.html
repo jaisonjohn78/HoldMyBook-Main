@@ -1,0 +1,191 @@
+
+{% include 'header.html' %}
+<main id="content">
+    <div class="mb-5 space-bottom-lg-3">  
+        <div class="page-header mb-8">
+            <div
+              class="bg-img-hero bg-gradient-primary"
+              style="background-image: url(../../static/img/1920x840/img1.jpg)"
+            >
+              <div class="container position-relative mb-2">
+                <div class="d-flex justify-content-center space-2 space-lg-4">
+                  <h6 class="font-weight-medium text-white font-size-12 py-lg-5">
+                    Wishlist
+                  </h6>
+                </div>
+                <nav
+                  class="woocommerce-breadcrumb font-size-2 d-flex justify-content-center align-items-center pb-4"
+                  style="margin-top: -150px"
+                >
+                  <a class="text-white" href="../home/index.html">Home</a>
+                  <span class="breadcrumb-separator text-white mx-1"
+                    ><i class="fas fa-angle-right"></i
+                  ></span>
+                  <span class="text-white">Wishlist</span>
+                </nav>
+              </div>
+            </div>
+          </div>
+    <div class="site-content bg-punch-light overflow-hidden" id="content">
+        <div class="container">
+            <header class="entry-header space-top-2 space-bottom-1 mb-2">
+                <h1 class="entry-title font-size-7">Your Wishlist: 3 items</h1>
+            </header>
+            <div class="row pb-8">
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main ">
+                        <div class="page type-page status-publish hentry">
+
+                            <div class="entry-content">
+                                <div class="woocommerce">
+                                    <form class="woocommerce-cart-form table-responsive" action="#" method="post">
+                                        <table
+                                            class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" style="width:85vw;">
+                                            <thead>
+                                                <tr class="border">
+                                                  <th
+                                                    scope="col"
+                                                    class="py-3 border-bottom-0 font-weight-medium pl-3 pl-md-5"
+                                                  >
+                                                    Prouct
+                                                  </th>
+                                                  <th
+                                                    scope="col"
+                                                    class="py-3 border-bottom-0 font-weight-medium"
+                                                  >
+                                                    Price
+                                                  </th>
+                                                  <th
+                                                    scope="col"
+                                                    class="py-3 border-bottom-0 font-weight-medium"
+                                                  >
+                                                    Stock Staus
+                                                  </th>
+                                                  <th
+                                                    scope="col"
+                                                    class="py-3 border-bottom-0 font-weight-medium"
+                                                  >
+                                                    Actions
+                                                  </th>
+                                                  <th
+                                                    scope="col"
+                                                    class="py-3 border-bottom-0 font-weight-medium"
+                                                  >
+                                                    Delete
+                                                  </th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr class="border">
+                                                  <th
+                                                    class="pl-3 pl-md-5 font-weight-normal align-middle py-6"
+                                                  >
+                                                    <div class="d-flex align-items-center">
+                                                      <a class="d-block" href="#">
+                                                        <img
+                                                          class="img-fluid"
+                                                          src="../../static/img/romance/img1.png"
+                                                          alt="Image-Description" style="height:170px"
+                                                        />
+                                                      </a>
+                                                      <div class="ml-xl-4">
+                                                        <div class="font-weight-normal">
+                                                          <a href="#">Something I Never Told You</a>
+                                                        </div>
+                                                        <div class="font-size-2">
+                                                          <a href="#" class="text-gray-700" tabindex="0"
+                                                            >Jay Shetty</a
+                                                          >
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </th>
+                                                  <td class="align-middle py-5">Rs 500</td>
+                                                  <td class="align-middle py-5">In Stock</td>
+                                                  <td class="align-middle py-5">
+                                                    <a href="/sproduct"><span class="product__add-to-cart">ADD TO CART</span></a>
+                                                  </td>
+                                                  <td class="align-middle py-5" style="text-align:center">
+                                                  <i class="fa-solid fa-trash"></i>
+                                                  </td>
+                                                </tr>
+                                                <tr class="border">
+                                                  <th
+                                                    class="pl-3 pl-md-5 font-weight-normal align-middle py-6"
+                                                  >
+                                                    <div class="d-flex align-items-center">
+                                                      <a class="d-block" href="#">
+                                                        <img
+                                                          class="img-fluid"
+                                                          src="../../static/img/horror/img3.png" style="height:170px"
+                                                          alt="Image-Description"
+                                                        />
+                                                      </a>
+                                                      <div class="ml-xl-4">
+                                                        <div class="font-weight-normal">
+                                                          <a href="#">Classic Horror Stories</a>
+                                                        </div>
+                                                        <div class="font-size-2">
+                                                          <a href="#" class="text-gray-700" tabindex="0"
+                                                            >Jay Shetty</a
+                                                          >
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </th>
+                                                  <td class="align-middle py-5">Rs 370</td>
+                                                  <td class="align-middle py-5">In Stock</td>
+                                                  <td class="align-middle py-5">
+                                                    <a href="/sproduct"><span class="product__add-to-cart">ADD TO CART</span></a>
+                                                  </td>
+                                                  <td class="align-middle py-5" style="text-align:center">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr class="border">
+                                                  <th class="pl-5 font-weight-normal align-middle py-6">
+                                                    <div class="d-flex align-items-center">
+                                                      <a class="d-block" href="#">
+                                                        <img
+                                                          class="img-fluid"
+                                                          src="../../static/img/poetry/img4.png" style="height:170px"
+                                                          alt="Image-Description"
+                                                        />
+                                                      </a>
+                                                      <div class="ml-xl-4">
+                                                        <div class="font-weight-normal">
+                                                          <a href="#">Kuch Pal Sath Raho</a>
+                                                        </div>
+                                                        <div class="font-size-2">
+                                                          <a href="#" class="text-gray-700" tabindex="0"
+                                                            >Jay Shetty</a
+                                                          >
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </th>
+                                                  <td class="align-middle py-5">Rs 257</td>
+                                                  <td class="align-middle py-5">In Stock</td>
+                                                  <td class="align-middle py-5">
+                                                    <a href="/sproduct"><span class="product__add-to-cart">ADD TO CART</span></a>
+                                                  </td>
+                                                  <td class="align-middle py-5" style="text-align:center">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                    </td>
+                                                </tr>
+                                              </tbody>
+                                        </table>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </main>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+{% include 'footer.html' %}
