@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>    
+    <link rel="stylesheet" href="book-style.css">
+    <link rel="stylesheet" href="scale.css">
+</head>
+<body>
+  <div class="shelf-id">#14</div>
+    <div class="bookshelf--frame">
+        <div class="book-wrapper">
+          <img class="book" src="img1.jpg" width="300" height="500" data-tippy-content="5 Available" data-tippy-title="VBook1">
+        </div>
+
+        <div class="book-wrapper">
+          <img class="book" src="img2.jpg" width="250" height="350" data-tippy-content="2 Available" data-tippy-title="ANbOOK2">
+        </div>
+
+        <div class="book-wrapper">
+          <img class="book" src="img3.jpg" width="400" height="280" data-tippy-content="1 Available" data-tippy-title="ANbOOK3">
+        </div>
+
+        <div class="book-wrapper">
+          <img class="book" src="img4.jpg" width="250" height="350" data-tippy-content="0 Available" data-tippy-title="ANbOOK4">
+        </div>
+
+        <div class="book-wrapper">
+          <img class="book" src="img7.jpg" width="250" height="350" data-tippy-content="6 Available" data-tippy-title="ANbOOK5">
+        </div>
+ 
+    </div>
+    <script src="popper.min.js"></script> 
+    <script src="tippy-bundle.umd.js"></script> 
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script>
+        var Tooltip = tippy('[data-tippy-content]');
+        tippy('.book', {  
+            content: 'Loding...',
+            placement: 'bottom',
+            followCursor: true,
+            followCursor: 'horizontal',
+            allowHTML: true,
+            interactive: true,
+            theme: 'light',
+            animation: false,
+            arrow: true ,
+            interactiveBorder: 1,
+            maxWidth: 150,
+            onShow(instance) {
+              var link = instance.reference;
+              var Tooltip2 = link.getAttribute('data-tippy-title');
+              instance.setContent(Tooltip2);
+                
+            }
+        });
+                    
+    </script>
+</body>
+</html>

@@ -24,11 +24,11 @@
 				<table class="data-table table nowrap">
 					<thead>
 						<tr>
-							<th class="table-plus datatable-nosort">Product</th>
+							<th class="table-plus datatable-nosort">Cover</th>
 							<th class="table-plus">Name</th>
-							<th  class="table-plus">Color</th>
-							<th>Size</th>
-							<th>Price</th>
+							<th  class="table-plus">Date of Issue</th>
+							<th>Date of Submition</th>
+							<th>Due</th>
 							<th>Oty</th>
 							<th class="datatable-nosort">Action</th>
 						</tr>
@@ -36,65 +36,15 @@
 					<tbody>
 						<tr>
 							<td class="table-plus">
-								<img src="vendors/images/cover/img1.jpg" width="70" height="70" alt="">
-							</td>
-							<td>
-								<h5 class="font-16">Shirt</h5>
-								by John Doe
-							</td>
-							<td>Black</td>
-							<td>M</td>
-							<td>₹1000</td>
-							<td>1</td>
-							<td>
-								<div class="dropdown">
-									<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-										<i class="dw dw-more"></i>
-									</a>
-									<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-										<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-										<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-										<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-									</div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="table-plus">
-								<img src="vendors/images/cover/img2.jpg" width="70" height="70" alt="">
-							</td>
-							<td>
-								<h5 class="font-16">Boots</h5>
-								by Lea R. Frith
-							</td>
-							<td>brown</td>
-							<td>9UK</td>
-							<td>₹900</td>
-							<td>1</td>
-							<td>
-								<div class="dropdown">
-									<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-										<i class="dw dw-more"></i>
-									</a>
-									<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-										<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
-										<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
-										<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
-									</div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="table-plus">
 								<img src="vendors/images/cover/img3.jpg" width="70" height="70" alt="">
 							</td>
 							<td>
-								<h5 class="font-16">Hat</h5>
-								by Erik L. Richards
+								<h5 class="font-16">Alice in Wonderland</h5>
+								by Nikhil
 							</td>
-							<td>Orange</td>
-							<td>M</td>
-							<td>₹100</td>
+							<td>2023-01-01 15:45:21</td>
+							<td style="color: red;">2023-01-30 15:45:21</td>
+							<td style="color: red;">₹120</td>
 							<td>4</td>
 							<td>
 								<div class="dropdown">
@@ -102,6 +52,7 @@
 										<i class="dw dw-more"></i>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+										<a class="dropdown-item" href="#"><i class="dw dw-alarm"></i> Notify User</a>
 										<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
 										<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
 										<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
@@ -111,15 +62,15 @@
 						</tr>
 						<tr>
 							<td class="table-plus">
-								<img src="vendors/images/cover/img4.jpg" width="70" height="70" alt="">
+								<img src="vendors/images/cover/img1.jpg" width="70" height="70" alt="">
 							</td>
 							<td>
-								<h5 class="font-16">Long Dress</h5>
-								by Renee I. Hansen
+								<h5 class="font-16">Avenir Next</h5>
+								by Hardik
 							</td>
-							<td>Gray</td>
-							<td>L</td>
-							<td>₹1000</td>
+							<td>2023-01-01 10:45:21</td>
+							<td>2023-02-01 10:45:21</td>
+							<td>₹0</td>
 							<td>1</td>
 							<td>
 								<div class="dropdown">
@@ -127,6 +78,7 @@
 										<i class="dw dw-more"></i>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+										<a class="dropdown-item" href="#"><i class="dw dw-alarm"></i> Notify User</a>
 										<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
 										<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
 										<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
@@ -136,15 +88,15 @@
 						</tr>
 						<tr>
 							<td class="table-plus">
-								<img src="vendors/images/cover/img5.jpg" width="70" height="70" alt="">
+								<img src="vendors/images/cover/img6.jpg" width="70" height="70" alt="">
 							</td>
 							<td>
-								<h5 class="font-16">Blazer</h5>
-								by Vicki M. Coleman
+								<h5 class="font-16">Foreman</h5>
+								by Jaison
 							</td>
-							<td>Blue</td>
-							<td>M</td>
-							<td>₹1000</td>
+							<td>2023-01-01 20:22:21</td>
+							<td>2023-02-01 20:22:21</td>
+							<td>₹0</td>
 							<td>1</td>
 							<td>
 								<div class="dropdown">
@@ -152,6 +104,7 @@
 										<i class="dw dw-more"></i>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+										<a class="dropdown-item" href="#"><i class="dw dw-alarm"></i> Notify User</a>
 										<a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
 										<a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
 										<a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
@@ -159,6 +112,8 @@
 								</div>
 							</td>
 						</tr>
+						
+						
 					</tbody>
 				</table>
 			</div>
