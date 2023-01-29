@@ -480,7 +480,7 @@
 							<thead>
 								<tr>
 									<th scope="col">Order id</th>
-									<th scope="col">Product Name</th>
+									<th scope="col">Book Name</th>
 									<th scope="col">Username</th>
 									<th scope="col">Customer Name</th>
                                              <th scope="col">Price</th>
@@ -494,64 +494,44 @@
 							<tbody>
 								<tr>
 									<th scope="row">1</th>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>@mdo</td>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>Otto</td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-									<td><span class="badge badge-primary">Primary</span></td>
+									<td>Born a crime</td>
+									<td>treverNoah</td>
+									<td>Naveen</td>
+									<td>300</td>
+									<td>1</td>
+									<td>29/1/2023</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                    <td><span class="badge badge-success">Success</span></td>
+									<td id="icon-td"><a href="order-edit.php"><i class="micon dw dw-pencil" id="edit-btn"></i></a>
+									<i class="micon dw dw-trash" id="delete-btn"></i></td>
 								</tr>
 								<tr>
 									<th scope="row">2</th>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>@mdo</td>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>Otto</td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-									<td><span class="badge badge-secondary">Secondary</span></td>
+									<td>Theory of Everything</td>
+									<td>stevenHawking</td>
+									<td>Jenin</td>
+									<td>642</td>
+									<td>2</td>
+									<td>20/1/2023</td>
+                                             <td><span class="badge badge-success">Success</span></td>
+                                             <td><span class="badge badge-success">Success</span></td>
+											 <td id="icon-td"><a href="order-edit.php"><i class="micon dw dw-pencil" id="edit-btn"></i></a>
+									<i class="micon dw dw-trash" id="delete-btn"></i></td>
 								</tr>
 								<tr>
 									<th scope="row">3</th>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>@mdo</td>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>Otto</td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-									<td><span class="badge badge-success">Success</span></td>
+									<td>Harry Potter</td>
+									<td>jkROwling</td>
+									<td>Pratyush</td>
+									<td>444</td>
+									<td>7</td>
+									<td>15/1/2023</td>
+                                             <td><span class="badge badge-danger">Cancelled</span></td>
+                                             <td><span class="badge badge-danger">Cancelled</span></td>
+											 <td id="icon-td"><a href="order-edit.php"><i class="micon dw dw-pencil" id="edit-btn"></i></a>
+									<i class="micon dw dw-trash" id="delete-btn"></i></td>
 								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>@mdo</td>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>Otto</td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-									<td><span class="badge badge-secondary">Secondary</span></td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>@mdo</td>
-									<td>Mark</td>
-									<td>Otto</td>
-									<td>Otto</td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-                                             <td><span class="badge badge-primary">Primary</span></td>
-									<td><span class="badge badge-success">Success</span></td>
-								</tr>
+								
 							</tbody>
 						</table>
 					</div>
