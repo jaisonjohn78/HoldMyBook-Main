@@ -478,24 +478,22 @@
 					<div class="clearfix">
 						<div class="pull-left">
 							<h4 class="text-blue h4">horizontal Basic Forms</h4>
-							<p class="mb-30">All bootstrap element classies</p>
+							
 						</div>
-						<div class="pull-right">
-							<a href="#horizontal-basic-form1" class="btn btn-primary btn-sm scroll-click" rel="content-y"  data-toggle="collapse" role="button"><i class="fa fa-code"></i> Source Code</a>
-						</div>
+						
 					</div>
 					<form>
 						<div class="form-group">
 							<label>Category Name</label>
-							<input pattern="[a-zA-Z]*" aria-describedby="textHelp" class="form-control" type="text" placeholder="Johnny">
+							<input pattern="[a-zA-Z]*" required onkeyup="text(this)" invalid-text="exampleInputCname21"  aria-describedby="textHelp" class="form-control" type="text" placeholder="Category" value="Humor">
+							<small id="exampleInputCname21" style="color: red; display: none;">Please Enter valid Category Name.<br/></small>
 						</div>
 						<div class="form-group">
 							<label>Username</label>
-							<input class="form-control" type="text" placeholder="Brown">
+							<input class="form-control" required onkeyup="text(this)" invalid-text="exampleInputname51"   type="text" placeholder="UserName" value="treverNoah">
+							<small id="exampleInputname51" style="color: red; display: none;">Please Enter valid Category Name.<br/></small>
 						</div>
-                              <div class="form-group" >
-                                   <input class="btn btn-primary btn-lg float-right" type="submit">
-                              </div>
+                              
                               <div class="form-group" >
                                    <input class="btn btn-primary btn-lg float-right" type="submit">
                               </div>

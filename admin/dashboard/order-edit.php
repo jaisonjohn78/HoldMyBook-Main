@@ -478,32 +478,34 @@
 					<div class="clearfix">
 						<div class="pull-left">
 							<h4 class="text-blue h4">horizontal Basic Forms</h4>
-							<p class="mb-30">All bootstrap element classies</p>
+							
 						</div>
-						<div class="pull-right">
-							<a href="#horizontal-basic-form1" class="btn btn-primary btn-sm scroll-click" rel="content-y"  data-toggle="collapse" role="button"><i class="fa fa-code"></i> Source Code</a>
-						</div>
+						
 					</div>
 					<form>
 						<div class="form-group">
-							<label>Product Name</label>
-							<input class="form-control" type="text" placeholder="T-Shirt">
+							<label>Book Name</label>
+							<input class="form-control" type="text" placeholder="Book Name" value="Born a crime">
 						</div>
 						<div class="form-group">
 							<label>Username</label>
-							<input class="form-control" type="text" placeholder="Brown">
+							<input class="form-control" required onkeyup="text(this)" invalid-text="exampleInputName07"  type="text" placeholder="Name" value="treverNoah">
+							<small id="exampleInputName07" style="color: red; display: none;">Please Enter valid Name.<br/></small>
 						</div>
                               <div class="form-group">
 							<label>Customer Name</label>
-							<input class="form-control" type="text" placeholder="Brown">
+							<input class="form-control" type="text" required onkeyup="text(this)" invalid-text="exampleInputName15"   placeholder="Brown" value="Naveen">
+							<small id="exampleInputName15" style="color: red; display: none;">Please Enter valid Name.<br/></small>
 						</div>
 						<div class="form-group">
 							<label>Price</label>
-							<input class="form-control" value="1000" type="number">
+							<input class="form-control" required onkeyup="number(this)" invalid-text="exampleInputPrice81" value="1000" type="number">
+							<small id="exampleInputPrice81" style="color: red; display: none;">Please Enter valid Price.<br/></small>
 						</div>
                               <div class="form-group">
 							<label>Quntity</label>
-							<input class="form-control" value="3" type="number">
+							<input class="form-control" required onkeyup="number(this)" invalid-text="exampleInputQuantity18" value="3" type="number">
+							<small id="exampleInputQuantity18" style="color: red; display: none;">Please Enter valid Quantity.<br/></small>
 						</div>
                               <div class="form-group">
 							<label>Date</label>
