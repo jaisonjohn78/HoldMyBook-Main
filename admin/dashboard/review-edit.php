@@ -447,7 +447,7 @@
 					<div class="row">
 						<div class="col-md-6 col-sm-12">
 							<div class="title">
-								<h4>Product Edit</h4>
+								<h4>Order Edit</h4>
 							</div>
 							<nav aria-label="breadcrumb" role="navigation">
 								<ol class="breadcrumb">
@@ -483,35 +483,34 @@
 						
 					</div>
 					<form>
+                        <div class="form-group">
+							<label>Review ID</label>
+							<input class="form-control" type="number" placeholder="Review Id" value="1" readonly>
+						</div>
 						<div class="form-group">
 							<label>Book Name</label>
-							<input pattern="[a-zA-Z]*" aria-describedby="textHelp" class="form-control" type="text" placeholder="Book Name" value="Born a Crime">
+							<input class="form-control" type="text" placeholder="Book Name" value="Born a crime">
+						</div>
+                        <div class="form-group">
+							<label>User ID</label>
+							<input class="form-control" type="number" placeholder="User Id" value="2" readonly>
 						</div>
 						<div class="form-group">
-							<label>Username</label>
-							<input class="form-control" type="text" required onkeyup="text(this)" invalid-text="exampleInputName14" placeholder="Brown" value="Heisenberg">
-							<small id="exampleInputName14" style="color: red; display: none;">Please Enter valid Name.<br/></small>
-						</div>
-						<div class="form-group">
-							<label>Book Type</label>
-							<input class="form-control" type="text" placeholder="Clothing" required onkeyup="text(this)" invalid-text="exampleInputType14" value="Humor">
-							<small id="exampleInputType14" style="color: red; display: none;">Please Enter valid Type.<br/></small>
-						</div>
-						<div class="form-group">
-							<label>MRP</label>
-							<input class="form-control" required onkeyup="number(this)" invalid-text="exampleInputMrp3" value="2224" type="number">
-							<small id="exampleInputMrp3" style="color: red; display: none;">Please Enter valid MRP.<br/></small>
-						</div>
-						<div class="form-group">
-							<label>Price</label>
-							<input class="form-control" required onkeyup="number(this)" invalid-text="exampleInputPrice8" value="1000" type="number">
-							<small id="exampleInputPrice8" style="color: red; display: none;">Please Enter valid Price.<br/></small>
+							<label>Review Details</label>
+							<input class="form-control" type="text" placeholder="Name" value="This very funny...">
+							
 						</div>
                               <div class="form-group">
-							<label>Quntity</label>
-							<input class="form-control" value="3" required onkeyup="number(this)" invalid-text="exampleInputQuantity8" type="number">
-							<small id="exampleInputQuantity8" style="color: red; display: none;">Please Enter valid Quantity.<br/></small>
+							<label>Review Date</label>
+							<input class="form-control" type="text" placeholder="Brown" value="Last 5 days ago">
+							
 						</div>
+						<div class="form-group">
+							<label>Rating</label>
+							<input class="form-control" required onkeyup="number(this)" invalid-text="exampleInputrating81" value="4" type="number">
+							<small id="exampleInputrating81" style="color: red; display: none;">Please Enter valid Price.<br/></small>
+						</div>
+                              
                               <div class="form-group" >
                                    <input class="btn btn-primary btn-lg float-right" type="submit">
                               </div>

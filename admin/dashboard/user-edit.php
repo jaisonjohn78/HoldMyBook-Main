@@ -51,15 +51,18 @@
 						</div>
 						<div class="form-group">
 							<label>Name</label>
-							<input class="form-control" type="text" value="Larry Bros">
+							<input class="form-control" required onkeyup="text(this)" invalid-text="exampleInputname1" type="text" value="Larry Bros">
+							<small id="exampleInputname1" style="color: red; display: none;">Please Enter valid Name.<br/></small>
 						</div>
 						<div class="form-group">
 							<label>Email</label>
-							<input class="form-control" value="20bca053@sxca.edu.in" type="email">
+							<input class="form-control" required onkeyup="email(this)" invalid-text="exampleInputEmail22" value="20bca053@sxca.edu.in" type="email">
+							<small id="exampleInputEmail22" style="color: red; display: none;">Please Enter valid Email.<br/></small>
 						</div>
 						<div class="form-group">
 							<label>Mobile no.</label>
-							<input class="form-control" value="8699887740" type="number">
+							<input class="form-control" required onkeyup="tel(this)" invalid-text="exampleInputMobile14" value="8699887740" type="number">
+							<small id="exampleInputMobile14" style="color: red; display: none;">Please Enter valid Phone number.<br/></small>
 						</div>
 						
                               <div class="form-group" >
